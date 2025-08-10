@@ -63,16 +63,16 @@ const ExperienceSection = () => {
     },
     {
       icon: Layers,
-      title: "Junior Frontend Developer",
-      company: "Sera Programmer",
+      title: "Frontend Developer",
+      company: "Tonad",
       period: "2021 - 2023",
       description:
         "Assisted in building and optimizing user interfaces with a focus on responsive and interactive designs.",
     },
     {
       icon: Code2,
-      title: "JavaScript Developer",
-      company: "OlovJS (Sera Programmer)",
+      title: "Frontend Developer",
+      company: "Liqquid innovations",
       period: "2023 - Present",
       description:
         "Contributed to developing JavaScript libraries and enhancing framework functionalities.",

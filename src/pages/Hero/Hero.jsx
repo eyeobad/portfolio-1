@@ -6,6 +6,7 @@ import Meteors from "@/components/ui/meteors";
 import PortfolioPage from "@/pages/About/About";
 import SparklesText from "@/components/ui/sparkles-text";
 import { FlipWords } from "@/components/ui/flip-words";
+import Resume from "/Victor Oguda's CV.pdf"
 
 // Grid Background - Replacing the HexagonBackground
 const GridBackground = () => {
@@ -43,30 +44,32 @@ const GridBackground = () => {
 export default function Hero() {
   const words = [
     "Full-Stack Developer & UI/UX Enthusiast",
-    "JavaScript Developer & Creator of Olova.js",
-    "Learning MARN Stack",
+    "JavaScript Developer",
+    "React Developer",
+    "Django Developer",,
     "Linux & GitHub for DevOps Enthusiast",
   ];
 
   const [code] = useState(`
 const profile = {
-    name: 'Nazmul Hossain',
-    title: 'Full-Stack Developer | Cloud Enthusiast | Problem Solver',
+    name: 'Oguda Victor',
+    title: 'Full-Stack Developer | Frontend Developer | Backend Developer',
     skills: [
-        'React', 'NextJS', 'Redux', 'Express',
-        'MySQL', 'MongoDB', 'Docker', 'AWS', 'TypeScript',
-        'GraphQL', 'Git', 'Linux', 'Discord Development'
+        'React', 'NextJS', 'Redux', 'Django','Gsap',
+        'MySQL', 'PostgreSQL', 'Docker', 'AWS', 'TypeScript',
+        'Tailwind css','javascript','Vercel','Framer Motion',
+        'GraphQL', 'Git', 'Netlify', 'Spline 3D','Bootstrap',
     ],
     hardWorker: true,
     quickLearner: true,
     problemSolver: true,
-    yearsOfExperience: 4, 
+    yearsOfExperience: 5, 
     hireable: function() {
         return (
             this.hardWorker &&
             this.problemSolver &&
             this.skills.length >= 5 &&
-            this.yearsOfExperience >= 3
+            this.yearsOfExperience >= 5
         );
     }
 };
@@ -188,9 +191,9 @@ const profile = {
                   <SparklesText text="Hello" />
                   <span className="relative inline-block">
                     I&apos;m
-                    <span className="typing-effect gradient-text">
+                    <span className="typing-effect gradient-text uppercase -tracking-wider md:-tracking-widest ">
                       {" "}
-                      Nazmul Hossain
+                      Oguda Victor
                     </span>
                   </span>
                 </h1>
@@ -211,7 +214,7 @@ const profile = {
               {/* Description */}
               <div className="relative mb-8 sm:mb-12 max-w-xl">
                 <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed">
-                  JavaScript lover 🚀 | OlovaJS creator 🔧 | Crafting frameworks
+                  JavaScript lover 🚀 | Django Pro 🔧 | Crafting frameworks
                   and coding the future 💻✨
                 </p>
               </div>
@@ -220,7 +223,7 @@ const profile = {
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 animate__animated animate__fadeInUp animate__delay-2s">
                 {/* View Projects Button */}
                 <a
-                  href="https://github.com/seraprogrammer"
+                  href="https://github.com/eyeobad"
                   className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-500 to-teal-400 p-0.5 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
                 >
                   <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-teal-400">
@@ -233,7 +236,7 @@ const profile = {
 
                 {/* Contact Button */}
                 <a
-                  href="#"
+                  href={Resume}
                   className="group relative inline-flex items-center justify-center gap-3 p-0.5 rounded-xl bg-gradient-to-r from-gray-800 to-gray-700 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
                 >
                   <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 border border-gray-700/50 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-gray-800 group-hover:to-gray-700">

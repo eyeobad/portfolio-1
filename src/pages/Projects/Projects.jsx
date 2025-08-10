@@ -2,47 +2,56 @@ import { ReactLenis } from "lenis/react";
 import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
+import Bakery from "/bakery.jpg";
+import BlackCafe from "/black cafe.jpg";
+import Ccoed from "/ccoed.jpg";
+import SeUn from "/Se_un.jpg";
 
 const projects = [
-  {
-    title: "Olova! A Lightweight JavaScript Library",
+  
+   {
+    title: "A Full Functional Shopping Store",
     description:
-      "A lightweight JavaScript library for creating beautiful, responsive UI components.",
-    src: "rock.jpg",
-    link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
-    color: "#5196fd",
-    githubLink: "https://github.com/olovajs/olova",
-    liveLink: "https://olova.js.org/",
-  },
-  {
-    title: "A sleek portfolio built with React and Tailwind CSS ",
-    description:
-      "A sleek portfolio built with React and Tailwind CSS to showcase your skills, projects, and experience in a modern design.",
-    src: "tree.jpg",
-    link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
+      "A Full Functional Shopping Store built with Html 5, Django,Bootsrap,Aos and Javascript..",
+    src: SeUn,
+    link: SeUn,
     color: "#8f89ff",
-    githubLink: "https://github.com/seraprogrammer/portfolio",
-    liveLink: "https://codervai.vercel.app",
+    githubLink: "https://github.com/eyeobad/",
+    liveLink: "https://eyeobad.pythonanywhere.com/home",
   },
+  
   {
-    title: "🚀 CodeWhisperer",
+    title: "🚀 Black Cafe",
     description:
-      "🚀 CodeWhisperer A powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
-    src: "water.jpg",
-    link: "https://i.postimg.cc/J4jPVFY0/Annotation-2025-04-01-204723.png",
+      " A sleek Coffee Shop Landing Page built with React,Gsap and Tailwind CSS."    ,
+    src: BlackCafe,
+    link: BlackCafe,
     color: "#fff",
-    githubLink: "https://github.com/seraprogrammer/codewhisperer",
-    liveLink: "https://codewhisperer.vercel.app/",
+    githubLink: "https://github.com/eyeobad/coffee",
+    liveLink: "https://Coffee-pi-navy.vercel.app",
   },
+  
+  
   {
-    title: "CodeKori 🔥",
+    title: "Bakery Landing Page",
     description:
-      "CodeKori is a powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
-    src: "house.jpg",
-    link: "https://i.postimg.cc/cHQr4fpR/Annotation-2025-04-01-205350.png",
+      "A sleek Bakery Landing Page built with React,Aos and Tailwind CSS.",
+    src: Bakery,
+    link: Bakery,
+    color: "#5196fd",
+    githubLink: "https://github.com/eyeobad/",
+    liveLink: "https://sweet-treats-landingpage.netlify.app/",
+  },
+ 
+  {
+    title: "Ccord",
+    description:
+      "A sleek Landing Page built with React,Framer Motion,Gsap and Tailwind CSS,.",
+    src: Ccoed,
+    link: Ccoed,
     color: "#ed649e",
-    githubLink: "https://github.com/seraprogrammer/CodeKori",
-    liveLink: "https://codekori.js.org",
+    githubLink: "https://github.com/eyeobad/",
+    liveLink: "https://ccords.netlify.app/",
   },
 ];
 

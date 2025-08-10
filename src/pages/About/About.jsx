@@ -22,20 +22,18 @@ export default function About() {
               </div>
             </div>
 
-            <div className="relative space-y-4">
+            <div className="relative space-y-4 ">
               <p className="text-white">
-                Hello! I'm Nazmul Hossain, a passionate JavaScript developer
-                specializing in creating innovative web solutions and
-                user-friendly interfaces.{" "}
+                Hello! I'm Oguda Victor,  Result-driven Full Stack Web developer I’ve helped launch and optimize websites that are not only fast and functional, but also scalable and easy to maintain. I bring deep knowledge across both frontend and backend offering complete full-stack solutions for companies who need more than just another coder.{" "}
                 <span className="font-bold text-white">
-                  As the creator of the OlovaJS UI Framework
+                  As a Full Stack Developer
                 </span>
                 , I'm dedicated to simplifying development workflows.
               </p>
               <p className="text-white">
                 My focus is on making web development faster, easier, and
-                accessible to all developers. Currently, I'm expanding into
-                backend development to grow as a full-stack developer and create
+                accessible to all everyone in need. Currently, I'm expanding into more
+                backend development frameworks to grow more as a full-stack developer and create
                 seamless, robust web applications.
               </p>
 
@@ -44,26 +42,10 @@ export default function About() {
                   <p className="text-white">
                     I'm a lifelong learner and innovator, driven by a desire to
                     contribute to the developer community with new ideas and
-                    tools that deliver real value. As the creator of OlovaJS,
-                    I'm pushing the boundaries of JavaScript frameworks to
-                    empower developers worldwide.
+                    tools that deliver real value.
                   </p>
 
-                  <div className="mt-6 space-y-3">
-                    <cite className="block font-medium text-white">
-                      Nazmul Hossain, Creator of
-                    </cite>
-                    <div className="flex items-center gap-2">
-                      <img
-                        className="h-5 w-fit"
-                        src={OlovaLogo}
-                        alt="Olova Logo"
-                        height="20"
-                        width="auto"
-                      />
-                      <span className="text-white">OlovaJS</span>
-                    </div>
-                  </div>
+                 
                 </blockquote>
               </div>
             </div>

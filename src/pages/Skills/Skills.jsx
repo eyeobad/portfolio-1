@@ -5,7 +5,6 @@ import IconCloudDemo from "@/components/globe";
 import { Code2, Paintbrush, Database, Layout, Cpu, Cloud } from "lucide-react";
 import {
   FaReact,
-  FaNodeJs,
   FaPython,
   FaDocker,
   FaGitAlt,
@@ -26,6 +25,8 @@ import {
   SiFirebase,
   SiVercel,
   SiVite,
+  SiDjango,
+  SiMysql
 } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 import { BsFileEarmarkCode, BsGrid1X2 } from "react-icons/bs";
@@ -100,8 +101,8 @@ const SkillsSection = () => {
       color: "text-green-400",
       skills: [
         {
-          name: "Node.js",
-          icon: <FaNodeJs className="w-4 h-4 text-[#339933]" />,
+          name: "Django",
+          icon: <SiDjango className="w-4 h-4 text-[#339933]" />,
         },
         {
           name: "Python",
@@ -112,8 +113,8 @@ const SkillsSection = () => {
           icon: <SiPostgresql className="w-4 h-4 text-[#336791]" />,
         },
         {
-          name: "MongoDB",
-          icon: <SiMongodb className="w-4 h-4 text-[#47A248]" />,
+          name: "Mysql",
+          icon: <SiMysql className="w-4 h-4 text-[#47A248]" />,
         },
         {
           name: "REST APIs",

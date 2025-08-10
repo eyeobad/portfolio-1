@@ -14,27 +14,27 @@ const EducationSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const educationData = [
-    {
-      degree: "Secondary School Certificate (SSC)",
-      school: "Natore Textile Institute",
-      mascot: "📘",
-      year: "2019-2021",
-      achievements: ["GPA: 4.89", "Subject: Science"],
-      skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
-      description:
-        "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
-    },
-    {
-      degree: "Higher Secondary Certificate (HSC)",
-      school: "Dottopara Model Degree College",
-      mascot: "📗",
-      year: "2021-2023",
-      achievements: ["GPA: 4.25", "Subject: Arts"],
-      skills: ["Literature", "Social Studies", "Economics", "History"],
-      description:
-        "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
-    },
-  ];
+  {
+    degree: "Full Stack Web Developer",
+    school: "Lagos School of Programming",
+    mascot: "📘",
+    year: "2019-2021",
+    achievements: ["⭐⭐⭐⭐⭐", "Specialization: Web Development"],
+    skills: ["HTML5", "CSS3", "JavaScript", "Django"],
+    description:
+      "Gained in-depth knowledge of web development technologies, focusing on building scalable applications and practical project-based learning.",
+  },
+  {
+    degree: "Bachelor of Computer Science",
+    school: "Osun State University",
+    mascot: "📗",
+    year: "2021-2023",
+    achievements: ["⭐⭐⭐⭐", "Specialization: Computer Science"],
+    skills: ["Python", "JavaScript", "c #", "data struture"],
+    description:
+      "Built a strong foundation in computer science principles, emphasizing software development, data analysis, and problem-solving through hands-on projects.",
+  },
+];
 
   const containerVariants = {
     hidden: { opacity: 0 },

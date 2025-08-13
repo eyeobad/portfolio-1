@@ -6,7 +6,7 @@ import Meteors from "@/components/ui/meteors";
 import PortfolioPage from "@/pages/About/About";
 import SparklesText from "@/components/ui/sparkles-text";
 import { FlipWords } from "@/components/ui/flip-words";
-import Resume from "/Victor Oguda's CV.pdf"
+import Resume from "/oguda_victor.pdf"
 
 // Grid Background - Replacing the HexagonBackground
 const GridBackground = () => {

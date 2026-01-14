@@ -60,14 +60,14 @@ const designSamples = [
 
 const localEdits = [
   {
-    label: "Edit 1",
+    label: "sample",
     title: "Colorway micro scene",
     description:
       "Slow fades and layered typography make the palette feel cinematic while the frame anchors the graphic story.",
     src: editOne,
   },
   {
-    label: "Edit 2",
+    label: "sample",
     title: "Pulse loop for short-form",
     description:
       "An accelerated loop that leans into rhythm, quick crossfades, and gradient light leaks for social-ready edits.",

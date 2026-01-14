@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import heroImage from "../../assets/images/hero.jpg";
+import editOne from "../../assets/edit1.mp4";
+import editTwo from "../../assets/edit 2.mp4";
 import choplife from "../../assets/Social media designs for Choplife Lagos.jfif";
 import untitled from "../../assets/Untitled design.png";
 import yellowLogo from "../../assets/Yellow and Black Modern Electrical Specialized Logo  (1).jpg";
@@ -52,6 +54,23 @@ const designSamples = [
     src: monday,
     title: "Monday studio moodboard",
     caption: "Multiscreen collage for brand refresh ideation.",
+  },
+];
+
+const localEdits = [
+  {
+    label: "Edit 1",
+    title: "Colorway micro scene",
+    description:
+      "Slow fades and layered typography make the palette feel cinematic while the frame anchors the graphic story.",
+    src: editOne,
+  },
+  {
+    label: "Edit 2",
+    title: "Pulse loop for short-form",
+    description:
+      "An accelerated loop that leans into rhythm, quick crossfades, and gradient light leaks for social-ready edits.",
+    src: editTwo,
   },
 ];
 
@@ -118,13 +137,13 @@ export default function ChromaForge() {
           <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-center">
             <div className="space-y-4">
               <p className="text-xs uppercase tracking-[0.4em] text-emerald-400">
-                Creative film sample
+                Edit 1 - Colorway cinematic reel
               </p>
               <h2 className="text-3xl md:text-4xl font-semibold">
-                “Colorway” — a cinematic edit of layered design story.
+                Colorway brings layered design into a single film edit.
               </h2>
               <p className="text-gray-300">
-                A curated edit that brings the ChromaForge visual language to motion. This reel demonstrates pacing, color, and audio that carry over from graphic identity into short-form film.
+                This full-length reel pairs the ChromaForge palette with deliberate pacing, textured overlays, and music that mirrors the gradients you see in the still image samples below.
               </p>
             </div>
 
@@ -147,23 +166,24 @@ export default function ChromaForge() {
         <div className="bg-gradient-to-br from-black/80 via-slate-900 to-slate-900 rounded-[32px] border border-white/10 p-8 shadow-2xl shadow-black/80">
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] items-center">
             <div className="space-y-4 order-2 lg:order-1">
-              <p className="text-xs uppercase tracking-[0.4em] text-emerald-400">
-                Social-motion snippet
-              </p>
-              <h2 className="text-3xl md:text-4xl font-semibold">
-                TikTok edit that exaggerates the ChromaForge palette
-              </h2>
-              <p className="text-gray-300">
-                Fast-cut rhythm plus split-screen design details for the short-form screen. Scenes were colored with the same gradients that appear across the graphic sample tiles.
-              </p>
-              <a
-                href="https://vm.tiktok.com/ZSHojPKeGj2XH-Kcuef/"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex text-xs uppercase tracking-[0.4em] text-cyan-400 hover:text-cyan-200 transition"
-              >
-                Watch on TikTok ↗
-              </a>
+               <p className="text-xs uppercase tracking-[0.4em] text-emerald-400">
+                 Edit 2 - TikTok pulse
+               </p>
+               <h2 className="text-3xl md:text-4xl font-semibold">
+                 High-velocity cuts that reset the ChromaForge story for social.
+               </h2>
+               <p className="text-gray-300">
+                 Tight edits, split-screen layouts, and vibrant pops keep this short-form version instantly recognizable while echoing the palettes in the still galleries.
+               </p>
+               <a
+                 href="https://vm.tiktok.com/ZSHojPKeGj2XH-Kcuef/"
+                 target="_blank"
+                 rel="noreferrer"
+                 className="inline-flex text-xs uppercase tracking-[0.4em] text-cyan-400 hover:text-cyan-200 transition"
+               >
+                 Watch on TikTok ->
+               </a>
+
             </div>
 
             <div className="rounded-3xl border border-white/10 overflow-hidden bg-black order-1 lg:order-2">
@@ -177,6 +197,28 @@ export default function ChromaForge() {
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-6xl mx-auto px-4 pb-20">
+        <div className="flex h-full flex-col gap-8 rounded-[32px] border border-white/10 bg-gradient-to-br from-slate-900/80 via-slate-900 to-black p-8 shadow-2xl shadow-black/60">
+          <div className="space-y-3">
+            <p className="text-xs uppercase tracking-[0.4em] text-emerald-400">
+              Local edit exports
+            </p>
+            <h3 className="text-3xl font-semibold text-white">
+              Edit 1 and Edit 2 are available as direct samples
+            </h3>
+            <p className="text-gray-300">
+              Every edit you see on this page has a file-level counterpart, so you can feel the timing, pacing, and color in high quality whenever you need an offline reference.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {localEdits.map((edit) => (
+              <LocalEditCard key={edit.title} edit={edit} />
+            ))}
           </div>
         </div>
       </section>
@@ -249,5 +291,34 @@ function DesignSampleCard({ sample }) {
         <p className="text-sm text-white/70">{sample.caption}</p>
       </div>
     </div>
+  );
+}
+
+function LocalEditCard({ edit }) {
+  const { label, title, description, src } = edit;
+
+  return (
+    <article className="flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-slate-900/70 shadow-2xl shadow-black/60">
+      <div className="relative h-56 bg-black">
+        <video
+          className="h-full w-full object-cover"
+          src={src}
+          controls
+          loop
+          muted
+          playsInline
+        >
+          Your browser does not support HTML5 video.
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+      </div>
+      <div className="space-y-2 p-6">
+        <span className="text-xs uppercase tracking-[0.3em] text-white/60">
+          {label}
+        </span>
+        <h4 className="text-xl font-semibold text-white">{title}</h4>
+        <p className="text-sm text-white/70">{description}</p>
+      </div>
+    </article>
   );
 }

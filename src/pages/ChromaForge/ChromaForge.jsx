@@ -210,14 +210,10 @@ export default function ChromaForge() {
         <div className="flex h-full flex-col gap-8 rounded-[32px] border border-white/10 bg-gradient-to-br from-slate-900/80 via-slate-900 to-black p-8 shadow-2xl shadow-black/60">
           <div className="space-y-3">
             <p className="text-xs uppercase tracking-[0.4em] text-emerald-400">
-              Local edit exports
+              more samples
             </p>
-            <h3 className="text-3xl font-semibold text-white">
-              Edit 1 and Edit 2 are available as direct samples
-            </h3>
-            <p className="text-gray-300">
-              Every edit you see on this page has a file-level counterpart, so you can feel the timing, pacing, and color in high quality whenever you need an offline reference.
-            </p>
+          
+        
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">

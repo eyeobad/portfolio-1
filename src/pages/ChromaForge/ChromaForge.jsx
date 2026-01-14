@@ -61,14 +61,14 @@ const designSamples = [
 const localEdits = [
   {
     label: "sample",
-    title: "Colorway micro scene",
+    title: "motion visual design for a streaming intro",
     description:
       "Slow fades and layered typography make the palette feel cinematic while the frame anchors the graphic story.",
     src: editOne,
   },
   {
     label: "sample",
-    title: "Pulse loop for short-form",
+    title: "motion graphic sample",
     description:
       "An accelerated loop that leans into rhythm, quick crossfades, and gradient light leaks for social-ready edits.",
     src: editTwo,
@@ -347,9 +347,9 @@ function LocalEditCard({ edit }) {
 
   return (
     <article className="flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-slate-900/70 shadow-2xl shadow-black/60">
-      <div className="relative h-56 bg-black">
-        <video
-          className="h-full w-full object-cover"
+        <div className="relative h-56 bg-black">
+          <video
+            className="h-full w-full object-cover"
           src={src}
           controls
           loop
@@ -358,7 +358,7 @@ function LocalEditCard({ edit }) {
         >
           Your browser does not support HTML5 video.
         </video>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
       </div>
       <div className="space-y-2 p-6">
         <span className="text-xs uppercase tracking-[0.3em] text-white/60">

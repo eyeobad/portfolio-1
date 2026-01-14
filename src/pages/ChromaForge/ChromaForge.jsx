@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import heroImage from "../../assets/images/hero.jpg";
 import editOne from "../../assets/edit1.mp4";
@@ -75,6 +76,10 @@ const localEdits = [
 ];
 
 export default function ChromaForge() {
+  const [activeSample, setActiveSample] = useState(null);
+
+  const closeSampler = () => setActiveSample(null);
+
   return (
     <main className="min-h-screen bg-slate-950 text-white">
       <section className="max-w-6xl mx-auto px-4 py-16 lg:py-20">
@@ -137,13 +142,13 @@ export default function ChromaForge() {
           <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-center">
             <div className="space-y-4">
               <p className="text-xs uppercase tracking-[0.4em] text-emerald-400">
-                Edit 1 - Colorway cinematic reel
+                YouTube long-form reel
               </p>
               <h2 className="text-3xl md:text-4xl font-semibold">
-                Colorway brings layered design into a single film edit.
+                Colorway layers design into an extended cinematic story.
               </h2>
               <p className="text-gray-300">
-                This full-length reel pairs the ChromaForge palette with deliberate pacing, textured overlays, and music that mirrors the gradients you see in the still image samples below.
+                This YouTube edit pairs the ChromaForge palette with deliberate pacing, textured overlays, and music that mirrors the gradients you see in the still image samples below.
               </p>
             </div>
 
@@ -167,7 +172,7 @@ export default function ChromaForge() {
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] items-center">
             <div className="space-y-4 order-2 lg:order-1">
                <p className="text-xs uppercase tracking-[0.4em] text-emerald-400">
-                 Edit 2 - TikTok pulse
+                 TikTok short-form pulse
                </p>
                <h2 className="text-3xl md:text-4xl font-semibold">
                  High-velocity cuts that reset the ChromaForge story for social.
@@ -238,10 +243,42 @@ export default function ChromaForge() {
 
         <div className="grid gap-6 md:grid-cols-2">
           {designSamples.map((sample) => (
-            <DesignSampleCard key={sample.title} sample={sample} />
+            <DesignSampleCard
+              key={sample.title}
+              sample={sample}
+              onActivate={() => setActiveSample(sample)}
+            />
           ))}
         </div>
       </section>
+      {activeSample && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-lg"
+          role="dialog"
+          aria-modal="true"
+          onClick={closeSampler}
+        >
+          <figure
+            className="relative mx-4 max-h-[90vh] w-full max-w-4xl overflow-hidden rounded-3xl border border-white/10 bg-black"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <img
+              src={activeSample.src}
+              alt={activeSample.title}
+              className="h-full w-full object-contain"
+            />
+            <figcaption className="p-4 text-sm text-white/70">
+              {activeSample.caption}
+            </figcaption>
+            <button
+              className="absolute right-3 top-3 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white transition hover:bg-white/20"
+              onClick={closeSampler}
+            >
+              Close
+            </button>
+          </figure>
+        </div>
+      )}
     </main>
   );
 }
@@ -275,9 +312,20 @@ function CapsuleCard({ capsule }) {
   );
 }
 
-function DesignSampleCard({ sample }) {
+function DesignSampleCard({ sample, onActivate }) {
   return (
-    <div className="bg-slate-900/80 rounded-3xl border border-white/10 overflow-hidden shadow-xl shadow-black/60">
+    <div
+      role="button"
+      tabIndex={0}
+      className="bg-slate-900/80 rounded-3xl border border-white/10 overflow-hidden shadow-xl shadow-black/60 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+      onClick={onActivate}
+      onKeyDown={(event) => {
+        if (event.key === "Enter" && onActivate) {
+          onActivate();
+        }
+      }}
+      aria-label={`View ${sample.title}`}
+    >
       <div className="relative w-full h-64 bg-black">
         <img
           src={sample.src}

@@ -24,16 +24,17 @@ const EducationSection = () => {
     description:
       "Gained in-depth knowledge of web development technologies, focusing on building scalable applications and practical project-based learning.",
   },
-  {
-    degree: "Bachelor of Computer Science",
-    school: "Osun State University",
-    mascot: "📗",
-    year: "2021-2023",
-    achievements: ["⭐⭐⭐⭐", "Specialization: Computer Science"],
-    skills: ["Python", "JavaScript", "c #", "data struture"],
-    description:
-      "Built a strong foundation in computer science principles, emphasizing software development, data analysis, and problem-solving through hands-on projects.",
-  },
+{
+  degree: "Bachelor of Physiology",
+  school: "Osun State University",
+  mascot: "📗",
+  year: "2021–2023",
+  achievements: ["⭐⭐⭐⭐", "Tech-focused Academic Path"],
+  skills: ["Python", "JavaScript", "C#", "Data Structures"],
+  description:
+    "Completed a degree in Physiology while actively building a strong foundation in software development and computational problem-solving, applying analytical and scientific thinking to technology-driven projects."
+},
+
 ];
 
   const containerVariants = {

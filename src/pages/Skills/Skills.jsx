@@ -17,20 +17,22 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiPostgresql,
-  SiMongodb,
   SiGraphql,
   SiJest,
   SiWebpack,
   SiRedux,
-  SiFirebase,
   SiVercel,
   SiVite,
   SiDjango,
-  SiMysql
+  SiAdobephotoshop,
+  SiAdobepremierepro,
+  SiAdobeaftereffects,
+  SiOpenai,
 } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
-import { BsFileEarmarkCode, BsGrid1X2 } from "react-icons/bs";
-import { MdAnimation } from "react-icons/md";
+import { BsGrid1X2 } from "react-icons/bs";
+import { MdAnimation, MdAutoAwesome, MdOutlineSettingsSuggest } from "react-icons/md";
+import { RiMovie2Line } from "react-icons/ri";
 import { FcWorkflow } from "react-icons/fc";
 
 const SkillCard = ({ icon: Icon, title, skills, color }) => (
@@ -86,18 +88,22 @@ const SkillsSection = () => {
           icon: <SiTailwindcss className="w-4 h-4 text-[#38B2AC]" />,
         },
         {
-          name: "HTML5",
-          icon: <BsFileEarmarkCode className="w-4 h-4 text-[#E34F26]" />,
+          name: "React Native",
+          icon: <SiVite className="w-4 h-4 text-[#646CFF]" />,
         },
         {
-          name: "CSS3",
-          icon: <BsFileEarmarkCode className="w-4 h-4 text-[#1572B6]" />,
+          name: "Redux",
+          icon: <SiRedux className="w-4 h-4 text-[#764ABC]" />,
+        },
+        {
+          name: "Framer Motion",
+          icon: <MdAnimation className="w-4 h-4 text-[#F59E0B]" />,
         },
       ],
     },
     {
       icon: Database,
-      title: "Backend Development",
+      title: "Backend & APIs",
       color: "text-green-400",
       skills: [
         {
@@ -109,36 +115,40 @@ const SkillsSection = () => {
           icon: <FaPython className="w-4 h-4 text-[#3776AB]" />,
         },
         {
+          name: "Node.js & Express",
+          icon: <BsGrid1X2 className="w-4 h-4 text-[#FF6C37]" />,
+        },
+        {
+          name: "NestJS",
+          icon: <SiTypescript className="w-4 h-4 text-[#3178C6]" />,
+        },
+        {
           name: "PostgreSQL",
           icon: <SiPostgresql className="w-4 h-4 text-[#336791]" />,
         },
         {
-          name: "Mysql",
-          icon: <SiMysql className="w-4 h-4 text-[#47A248]" />,
-        },
-        {
-          name: "REST APIs",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#FF6C37]" />,
-        },
-        {
-          name: "GraphQL",
+          name: "GraphQL & REST",
           icon: <SiGraphql className="w-4 h-4 text-[#E10098]" />,
         },
       ],
     },
     {
-      icon: Layout,
-      title: "UI/UX Design",
+      icon: Paintbrush,
+      title: "UI/UX & Creative Direction",
       color: "text-purple-400",
       skills: [
         { name: "Figma", icon: <FaFigma className="w-4 h-4 text-[#F24E1E]" /> },
         {
-          name: "Responsive Design",
+          name: "Brand Identity",
+          icon: <BsGrid1X2 className="w-4 h-4 text-[#9CA3AF]" />,
+        },
+        {
+          name: "Responsive Layouts",
           icon: <Layout className="w-4 h-4 text-[#38B2AC]" />,
         },
         {
-          name: "Wireframing",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#9CA3AF]" />,
+          name: "Photo Retouching",
+          icon: <SiAdobephotoshop className="w-4 h-4 text-[#31A8FF]" />,
         },
         {
           name: "Prototyping",
@@ -147,8 +157,58 @@ const SkillsSection = () => {
       ],
     },
     {
+      icon: MdAnimation,
+      title: "Video & Motion",
+      color: "text-yellow-400",
+      skills: [
+        {
+          name: "Premiere Pro",
+          icon: <SiAdobepremierepro className="w-4 h-4 text-[#FF1C1C]" />,
+        },
+        {
+          name: "After Effects",
+          icon: <SiAdobeaftereffects className="w-4 h-4 text-[#FF5A1F]" />,
+        },
+        {
+          name: "Short-form Content",
+          icon: <RiMovie2Line className="w-4 h-4 text-[#00B7C3]" />,
+        },
+        {
+          name: "Motion Graphics",
+          icon: <MdAnimation className="w-4 h-4 text-[#FF6D00]" />,
+        },
+        {
+          name: "Color Grading",
+          icon: <SiAdobephotoshop className="w-4 h-4 text-[#31A8FF]" />,
+        },
+      ],
+    },
+    {
+      icon: Cpu,
+      title: "Generative AI & Automation",
+      color: "text-pink-400",
+      skills: [
+        {
+          name: "Grok & Gemini",
+          icon: <MdAutoAwesome className="w-4 h-4 text-[#06B6D4]" />,
+        },
+        {
+          name: "OpenAI",
+          icon: <SiOpenai className="w-4 h-4 text-[#00FFC3]" />,
+        },
+        {
+          name: "n8n Workflows",
+          icon: <MdOutlineSettingsSuggest className="w-4 h-4 text-[#F97316]" />,
+        },
+        {
+          name: "Prompt Engineering",
+          icon: <SiOpenai className="w-4 h-4 text-[#00FFC3]" />,
+        },
+      ],
+    },
+    {
       icon: Cloud,
-      title: "Cloud & DevOps",
+      title: "DevOps & Tooling",
       color: "text-orange-400",
       skills: [
         { name: "AWS", icon: <FaAws className="w-4 h-4 text-[#FF9900]" /> },
@@ -157,57 +217,23 @@ const SkillsSection = () => {
           icon: <FaDocker className="w-4 h-4 text-[#2496ED]" />,
         },
         { name: "CI/CD", icon: <FcWorkflow className="w-4 h-4" /> },
-        {
-          name: "Kubernetes",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#326CE5]" />,
-        },
         { name: "Git", icon: <FaGitAlt className="w-4 h-4 text-[#F05032]" /> },
         { name: "Linux", icon: <FaLinux className="w-4 h-4 text-[#FCC624]" /> },
-      ],
-    },
-    {
-      icon: Cpu,
-      title: "Tools & Technologies",
-      color: "text-pink-400",
-      skills: [
+        {
+          name: "Vercel Deployments",
+          icon: <SiVercel className="w-4 h-4 text-white" />,
+        },
+        {
+          name: "Webpack Bundles",
+          icon: <SiWebpack className="w-4 h-4 text-[#8DD6F9]" />,
+        },
+        {
+          name: "Jest Testing",
+          icon: <SiJest className="w-4 h-4 text-[#C21325]" />,
+        },
         {
           name: "VS Code",
           icon: <TbBrandVscode className="w-4 h-4 text-[#007ACC]" />,
-        },
-        { name: "Jest", icon: <SiJest className="w-4 h-4 text-[#C21325]" /> },
-        {
-          name: "Webpack",
-          icon: <SiWebpack className="w-4 h-4 text-[#8DD6F9]" />,
-        },
-        { name: "Redux", icon: <SiRedux className="w-4 h-4 text-[#764ABC]" /> },
-        {
-          name: "Firebase",
-          icon: <SiFirebase className="w-4 h-4 text-[#FFCA28]" />,
-        },
-        { name: "Vercel", icon: <SiVercel className="w-4 h-4 text-white" /> },
-        { name: "Vite", icon: <SiVite className="w-4 h-4 text-[#646CFF]" /> },
-      ],
-    },
-    {
-      icon: Paintbrush,
-      title: "Creative Skills",
-      color: "text-yellow-400",
-      skills: [
-        {
-          name: "UI Animation",
-          icon: <MdAnimation className="w-4 h-4 text-[#FF4081]" />,
-        },
-        {
-          name: "SVG Animation",
-          icon: <MdAnimation className="w-4 h-4 text-[#00C853]" />,
-        },
-        {
-          name: "3D Modeling",
-          icon: <Cpu className="w-4 h-4 text-[#7C4DFF]" />,
-        },
-        {
-          name: "Motion Graphics",
-          icon: <MdAnimation className="w-4 h-4 text-[#FF6D00]" />,
         },
       ],
     },

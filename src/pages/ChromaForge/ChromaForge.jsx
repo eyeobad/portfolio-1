@@ -82,62 +82,10 @@ export default function ChromaForge() {
 
   return (
     <main className="min-h-screen bg-slate-950 text-white">
-      <section className="max-w-6xl mx-auto px-4 py-16 lg:py-20">
-        <div className="grid gap-12 lg:grid-cols-2 items-center">
-          <div className="space-y-6">
-            <p className="text-xs uppercase tracking-[0.4em] text-emerald-400">
-              ChromaForge creative atelier
-            </p>
-            <h1 className="text-4xl md:text-5xl font-semibold leading-tight text-white">
-              Graphic design meets cinematic editing in one creative pulse.
-            </h1>
-            <p className="text-gray-300 text-lg md:text-xl max-w-xl">
-              ChromaForge wraps bespoke visual identity and video editing around your next campaign or personal project, sculpting both stills and motion to sound like the same story.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-emerald-400 to-cyan-500 text-sm font-semibold uppercase tracking-wide text-zinc-900 shadow-lg shadow-emerald-500/40 transition hover:translate-y-0.5"
-              >
-                Book a collaboration
-              </Link>
-              <Link
-                to="/projects"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-white/30 text-xs font-semibold uppercase tracking-wide text-white hover:border-white"
-              >
-                View portfolio
-              </Link>
-            </div>
-          </div>
+    
 
-          <div className="relative">
-            <div className="overflow-hidden rounded-[32px] shadow-2xl shadow-black/70">
-              <img
-                src={heroImage}
-                alt="Gradient collage of design and motion work"
-                className="w-full h-[420px] object-cover md:h-[520px]"
-              />
-            </div>
-            <div className="absolute -bottom-6 right-6 bg-slate-900/90 border border-white/20 rounded-3xl px-6 py-5 text-sm shadow-2xl shadow-slate-900/80 backdrop-blur">
-              <p className="text-xs uppercase tracking-[0.3em] text-gray-400">
-                Crafted for
-              </p>
-              <p className="text-lg font-semibold text-white">immersive releases</p>
-              <p className="text-xs text-gray-400 mt-1">Graphics + Motion</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section className="max-w-6xl mx-auto px-4 pb-20">
-        <div className="grid gap-8 md:grid-cols-2">
-          {creativeCapsules.map((capsule) => (
-            <CapsuleCard key={capsule.title} capsule={capsule} />
-          ))}
-        </div>
-      </section>
-
-      <section className="max-w-6xl mx-auto px-4 pb-16">
+      <section className="max-w-6xl mx-auto px-4 pb-16 md:pt-[10rem]">
         <div className="bg-gradient-to-br from-black/80 via-slate-900 to-slate-900 rounded-[32px] border border-white/10 p-8 shadow-2xl shadow-black/80">
           <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-center">
             <div className="space-y-4">

@@ -14,28 +14,33 @@ const EducationSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const educationData = [
-  {
-    degree: "Full Stack Web Developer",
-    school: "Lagos School of Programming",
-    mascot: "📘",
-    year: "2019-2021",
-    achievements: ["⭐⭐⭐⭐⭐", "Specialization: Web Development"],
-    skills: ["HTML5", "CSS3", "JavaScript", "Django"],
-    description:
-      "Gained in-depth knowledge of web development technologies, focusing on building scalable applications and practical project-based learning.",
-  },
-{
-  degree: "Bachelor of Physiology",
-  school: "Osun State University",
-  mascot: "📗",
-  year: "2021–2023",
-  achievements: ["⭐⭐⭐⭐", "Tech-focused Academic Path"],
-  skills: ["Python", "JavaScript", "C#", "Data Structures"],
-  description:
-    "Completed a degree in Physiology while actively building a strong foundation in software development and computational problem-solving, applying analytical and scientific thinking to technology-driven projects."
-},
-
-];
+    {
+      degree: "Full Stack Web Development",
+      school: "Lagos School of Programming",
+      mascot: "💻",
+      year: "2023 – 2024",
+      achievements: [
+        "Immersive bootcamp focused on modern web stacks",
+        "Capstone project: scalable cross-platform app",
+      ],
+      skills: ["React", "Node.js", "Django", "UI/UX"],
+      description:
+        "Completed hands-on training covering React, Next.js, Django, REST APIs, and deployment with emphasis on shipping polished production features.",
+    },
+    {
+      degree: "Bachelor of Science (B.Sc.) in Physiology",
+      school: "Osun State University",
+      mascot: "🎓",
+      year: "2019 – 2023",
+      achievements: [
+        "Graduated with strong analytical and research foundations",
+        "Applied scientific thinking to problem solving in tech",
+      ],
+      skills: ["Data Analysis", "Research", "Python"],
+      description:
+        "Balanced a rigorous physiology curriculum with independent software projects, blending data-driven thinking and computational tools into every solution.",
+    },
+  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },

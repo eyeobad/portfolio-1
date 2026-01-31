@@ -24,28 +24,28 @@ export default function About() {
 
             <div className="relative space-y-4 ">
               <p className="text-white">
-                Hello! I'm Oguda Victor,  Result-driven Full Stack Web developer I’ve helped launch and optimize websites that are not only fast and functional, but also scalable and easy to maintain. I bring deep knowledge across both frontend and backend offering complete full-stack solutions for companies who need more than just another coder.{" "}
-                <span className="font-bold text-white">
-                  As a Full Stack Developer
-                </span>
-                , I'm dedicated to simplifying development workflows.
+                Hello! I'm Oguda Victor, a Full-Stack Developer, UI/UX Designer,
+                and Video & Motion Specialist based in Lagos, Nigeria. With 5+
+                years of experience I deliver high-performance web and mobile
+                applications while simultaneously shaping cohesive branding and
+                motion narratives for diverse brands and clients.
               </p>
               <p className="text-white">
-                My focus is on making web development faster, easier, and
-                accessible to all everyone in need. Currently, I'm expanding into more
-                backend development frameworks to grow more as a full-stack developer and create
-                seamless, robust web applications.
+                I blend full-stack frameworks (React, Next.js, Django, Node.js)
+                with tools like Figma, Adobe, and Premiere/After Effects so
+                every user journey feels polished. Generative AI (Grok, Gemini,
+                OpenAI, n8n) helps me iterate faster without sacrificing craft,
+                whether it's UX flows, motion intros, or video content for social
+                reach.
               </p>
 
               <div className="pt-6">
-                <blockquote className="border-l-4 border-gray-300 pl-4">
+                <blockquote className="border-l-4 border-teal-300 pl-4">
                   <p className="text-white">
-                    I'm a lifelong learner and innovator, driven by a desire to
-                    contribute to the developer community with new ideas and
-                    tools that deliver real value.
+                    I aim to deliver digital work that feels thoughtful, human,
+                    and memorable—whether that means a production-ready web app or
+                    a viral short-form video.
                   </p>
-
-                 
                 </blockquote>
               </div>
             </div>

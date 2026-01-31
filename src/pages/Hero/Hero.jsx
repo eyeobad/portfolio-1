@@ -43,34 +43,31 @@ const GridBackground = () => {
 
 export default function Hero() {
   const words = [
-    "Full-Stack Developer & UI/UX Enthusiast",
-    "JavaScript Developer",
-    "React Developer",
-    "Django Developer",,
-    "Linux & GitHub for DevOps Enthusiast",
+    "Full-Stack Developer & Creative Director",
+    "UI/UX Designer & Motion Specialist",
+    "Generative AI Practitioner",
+    "React, Node, Django Expert",
+    "Storyteller Through Code & Video",
   ];
 
   const [code] = useState(`
 const profile = {
     name: 'Oguda Victor',
-    title: 'Full-Stack Developer | Frontend Developer | Backend Developer',
+    title: 'Full-Stack Developer | UI/UX Designer | Video & Motion Specialist',
+    location: 'Lagos, Nigeria',
+    contact: '+234 903 835 7956',
+    email: 'ogudavictor492@gmail.com',
+    portfolio: 'https://victor-innovations.netlify.app/',
+    experience: '5+ years delivering high-performance web, mobile, and creative products',
     skills: [
-        'React', 'NextJS', 'Redux', 'Django','Gsap',
-        'MySQL', 'PostgreSQL', 'Docker', 'AWS', 'TypeScript',
-        'Tailwind css','javascript','Vercel','Framer Motion',
-        'GraphQL', 'Git', 'Netlify', 'Spline 3D','Bootstrap',
+        'React', 'Next.js', 'React Native', 'Django', 'Node.js', 'Express', 'NestJS',
+        'HTML5', 'CSS3', 'JavaScript (ES6+)', 'Tailwind CSS', 'GSAP', 'Framer Motion',
+        'REST APIs', 'Webpack', 'Vite'
     ],
-    hardWorker: true,
-    quickLearner: true,
-    problemSolver: true,
-    yearsOfExperience: 5, 
+    creative: ['Branding', 'Photo Retouching', 'Video Direction', 'Motion Graphics'],
+    ai: ['Grok', 'Gemini', 'OpenAI', 'n8n'],
     hireable: function() {
-        return (
-            this.hardWorker &&
-            this.problemSolver &&
-            this.skills.length >= 5 &&
-            this.yearsOfExperience >= 5
-        );
+        return this.skills.length > 10 && this.experience.includes('5+');
     }
 };
   `);
@@ -214,8 +211,11 @@ const profile = {
               {/* Description */}
               <div className="relative mb-8 sm:mb-12 max-w-xl">
                 <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed">
-                  JavaScript lover 🚀 | Django Pro 🔧 | Crafting frameworks
-                  and coding the future 💻✨
+                  Versatile Full-Stack Developer and Creative Director with a
+                  5+ year track record of building performant digital products,
+                  crafting branding/video assets, and guiding narratives from
+                  concept through launch. I blend modern stacks with visual
+                  storytelling and Gen AI to keep deliveries sharp and human.
                 </p>
               </div>
 

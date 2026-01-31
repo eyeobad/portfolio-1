@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Send, Phone, MapPin, Mail } from "lucide-react";
+import { Send, Phone, MapPin, Mail, Globe } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -105,31 +105,58 @@ export default function Contact() {
                 </p>
               </div>
 
-              <div className="space-y-6">
-                <div className="flex items-center space-x-4">
-                  <div className="bg-purple-500/10 p-3 rounded-lg">
-                    <Mail className="w-6 h-6 text-purple-400" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-400">ogudavictor492@gmail.com</p>
-                  </div>
+            <div className="space-y-6">
+              <div className="flex items-center space-x-4">
+                <div className="bg-purple-500/10 p-3 rounded-lg">
+                  <Mail className="w-6 h-6 text-purple-400" />
                 </div>
+                <div>
+                  <h3 className="font-semibold">Email</h3>
+                  <p className="text-gray-400">ogudavictor492@gmail.com</p>
+                </div>
+              </div>
 
-                <div className="flex items-center space-x-4">
-                  <div className="bg-pink-500/10 p-3 rounded-lg">
-                    <MapPin className="w-6 h-6 text-pink-400" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">Location</h3>
-                    <p className="text-gray-400">Lagos, Nigeria</p>
-                  </div>
+              <div className="flex items-center space-x-4">
+                <div className="bg-teal-500/10 p-3 rounded-lg">
+                  <Phone className="w-6 h-6 text-teal-400" />
+                </div>
+                <div>
+                  <h3 className="font-semibold">Phone</h3>
+                  <p className="text-gray-400">+234 903 835 7956</p>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-4">
+                <div className="bg-cyan-500/10 p-3 rounded-lg">
+                  <Globe className="w-6 h-6 text-cyan-400" />
+                </div>
+                <div>
+                  <h3 className="font-semibold">Portfolio</h3>
+                  <a
+                    href="https://victor-innovations.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-gray-400 underline hover:text-white transition-colors"
+                  >
+                    victor-innovations.netlify.app
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-4">
+                <div className="bg-pink-500/10 p-3 rounded-lg">
+                  <MapPin className="w-6 h-6 text-pink-400" />
+                </div>
+                <div>
+                  <h3 className="font-semibold">Location</h3>
+                  <p className="text-gray-400">Lagos, Nigeria</p>
                 </div>
               </div>
             </div>
+            </div>
 
             {/* Contact Form */}
-            <div className="backdrop-blur-lg bg-white/5 p-8 rounded-2xl shadow-xl"netlify>
+            <div className="backdrop-blur-lg bg-white/5 p-8 rounded-2xl shadow-xl">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 gap-6">
                   <div>

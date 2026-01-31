@@ -1,5 +1,5 @@
 import React from "react";
-import { Code2, Activity, Cpu, Layers, Network, Binary } from "lucide-react";
+import { Code2, Activity, Layers, Binary } from "lucide-react";
 
 const ExperienceCard = ({
   title,
@@ -54,28 +54,36 @@ const ExperienceCard = ({
 const ExperienceSection = () => {
   const experiences = [
     {
-      icon: Network,
-      title: "WordPress Developer",
-      company: "Fiverr",
-      period: "2019 - 2020",
+      icon: Activity,
+      title: "Frontend Developer | Liqquid Innovations",
+      company: "Remote / On-site",
+      period: "2023 - Present",
       description:
-        "Worked on developing and customizing WordPress websites for clients globally.",
+        "Designed responsive UI elements for web and mobile using React.js, Next.js, and performant animation patterns while collaborating with backend teams to keep the product scalable and accessible.",
+    },
+    {
+      icon: Binary,
+      title: "Creative Media Specialist (Video & Design)",
+      company: "Freelance (Nigeria / Canada)",
+      period: "Jan 2020 - Present",
+      description:
+        "Produced short- and long-form video content (including a 1.2M+ view TikTok series), branding assets, and photo retouching while managing multiple clients and deadlines with consistent quality.",
     },
     {
       icon: Layers,
-      title: "Frontend Developer",
-      company: "Tonad",
-      period: "2021 - 2023",
+      title: "Full Stack Developer",
+      company: "Upwork (Remote Freelance)",
+      period: "2020 - Present",
       description:
-        "Assisted in building and optimizing user interfaces with a focus on responsive and interactive designs.",
+        "Built full-stack applications with React.js, Next.js, and Django, architected RESTful APIs, handled authentication, and often delivered full branding packages alongside the product.",
     },
     {
       icon: Code2,
-      title: "Frontend Developer",
-      company: "Liqquid innovations",
-      period: "2023 - Present",
+      title: "Frontend Developer (Internship)",
+      company: "Tonad",
+      period: "Jan 2019 - 2023",
       description:
-        "Contributed to developing JavaScript libraries and enhancing framework functionalities.",
+        "Maintained and improved user-facing features, ensuring UI/UX fidelity across browsers and devices while shipping reliable components within a growing product team.",
     },
   ];
 

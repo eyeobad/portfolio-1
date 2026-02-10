@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import heroImage from "../../assets/images/hero.jpg";
 import editOne from "../../assets/edit1.mp4";
 import editTwo from "../../assets/edit 2.mp4";
-import choplife from "../../assets/Social media designs for Choplife Lagos.jfif";
+import choplife from "../../assets/flyer hotel.png";
 import untitled from "../../assets/Untitled design.png";
 import yellowLogo from "../../assets/Yellow and Black Modern Electrical Specialized Logo  (1).jpg";
 import monday from "../../assets/monday.png";
@@ -38,23 +38,23 @@ const creativeCapsules = [
 const designSamples = [
   {
     src: choplife,
-    title: "Choplife Lagos social kit",
-    caption: "Social-first layouts that align urban energy with premium type.",
+    title: "hotel flyer",
+    caption: "Social-media flyer for a hotel.",
   },
   {
     src: untitled,
-    title: "Conceptual poster studies",
-    caption: "Exploratory typography + textures for editorial features.",
+    title: "logo design",
+    caption: "minmalistic logo design for a cargo company.",
   },
   {
     src: yellowLogo,
     title: "VoltCharge identity studies",
-    caption: "Electric yellow marks for electrical and tech partners.",
+    caption: "Electric yellow marks for electrical and solar service.",
   },
   {
     src: monday,
-    title: "Monday studio moodboard",
-    caption: "Multiscreen collage for brand refresh ideation.",
+    title: "lounge performance flyer",
+    caption: "social media flyer for lounge event.",
   },
 ];
 
@@ -63,14 +63,14 @@ const localEdits = [
     label: "sample",
     title: "motion visual design for a streaming intro",
     description:
-      "Slow fades and layered typography make the palette feel cinematic while the frame anchors the graphic story.",
+      "",
     src: editOne,
   },
   {
     label: "sample",
     title: "motion graphic sample",
     description:
-      "An accelerated loop that leans into rhythm, quick crossfades, and gradient light leaks for social-ready edits.",
+      "",
     src: editTwo,
   },
 ];
@@ -90,14 +90,12 @@ export default function ChromaForge() {
           <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-center">
             <div className="space-y-4">
               <p className="text-xs uppercase tracking-[0.4em] text-emerald-400">
-                YouTube long-form reel
+                YouTube long-form video
               </p>
               <h2 className="text-3xl md:text-4xl font-semibold">
-                Colorway layers design into an extended cinematic story.
+                worked on a short film as the video editor.
               </h2>
-              <p className="text-gray-300">
-                This YouTube edit pairs the ChromaForge palette with deliberate pacing, textured overlays, and music that mirrors the gradients you see in the still image samples below.
-              </p>
+           
             </div>
 
             <div className="rounded-3xl border border-white/10 overflow-hidden bg-black">
@@ -120,21 +118,19 @@ export default function ChromaForge() {
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] items-center">
             <div className="space-y-4 order-2 lg:order-1">
                <p className="text-xs uppercase tracking-[0.4em] text-emerald-400">
-                 TikTok short-form pulse
+                 TikTok short-form video
                </p>
                <h2 className="text-3xl md:text-4xl font-semibold">
-                 High-velocity cuts that reset the ChromaForge story for social.
+                 created a short form connect on tiktok with over 1.2m views
                </h2>
-               <p className="text-gray-300">
-                 Tight edits, split-screen layouts, and vibrant pops keep this short-form version instantly recognizable while echoing the palettes in the still galleries.
-               </p>
+              
                <a
                  href="https://vm.tiktok.com/ZSHojPKeGj2XH-Kcuef/"
                  target="_blank"
                  rel="noreferrer"
                  className="inline-flex text-xs uppercase tracking-[0.4em] text-cyan-400 hover:text-cyan-200 transition"
                >
-                 Watch on TikTok ->
+                 Watch on TikTok &rarr;
                </a>
 
             </div>
